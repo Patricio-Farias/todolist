@@ -1,0 +1,130 @@
+/*fuente utilizada en documento*/
+/*tamaño de la fuente 16px*/
+/*color de fondo*/
+/*margen y relleno*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/*ancho del contenedor*/
+/*margen superior a 50px*/
+/*color de fondo del contenedor*/
+/*radio de borde 10px*/
+/*relleno interno 20px dentro del contenedor*/
+/*agrega sombra al contenedor*/
+
+
+
+.todoList {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*margen inferior 20px para h1*/
+/*alinea texto del titulo al centro del contenedor*/
+
+
+.todoList h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/*Hace que los elementos hijos de .campos se muestren como una fila flex*/
+/*Centra verticalmente los elementos hijos dentro de .campos.*/
+/*margen inferior de 20 píxeles a los elementos con la clase campos*/
+
+.campos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*Hace que el elemento ocupe todo el espacio disponible dentro de su contenedor.*/
+/*relleno interior de 10 píxeles alrededor del elemento de entrada.*/
+/*Establece un borde de 1 píxel sólido de color gris claro alrededor del elemento de entrada.*/
+/*bordes del elemento de entrada sean redondeados con un radio de curvatura de 5 píxeles*/
+/*Hereda el tamaño de fuente del elemento padre*/
+
+
+.campos input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: inherit; /* Utiliza el tamaño de fuente heredado */
+}
+
+/*relleno de 10 píxeles en la parte superior e inferior y 20 píxeles en los lados izquierdo y derecho del botón*/
+/*Elimina el borde del botón*/
+/*color de fondo del botón como verde*/
+/*color del texto del botón como blanco*/
+/*Hace que los bordes del botón sean redondeados con un radio de curvatura de 5 píxeles*/
+/*Cambia el cursor al estilo de puntero cuando pasa sobre el botón*/
+/*Agrega un margen izquierdo de 10 píxeles al botón*/
+
+.campos button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/*Hace que la tabla ocupe el ancho completo de su contenedor*/
+/*Fusiona los bordes de las celdas de la tabla en uno solo*/
+/*margen superior de 20 píxeles a la tabla*/
+
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/*Establece un relleno de 10 píxeles en todas las celdas*/
+/*Alinea el texto dentro de las celdas a la izquierda*/
+
+
+.tabla th, .tabla td {
+    padding: 10px;
+    text-align: left;
+}
+
+/*Establece el color de fondo de las celdas de encabezado como verde*/
+/*color del texto dentro de las celdas de encabezado como blanco*/
+
+
+.tabla th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*Aplica las reglas a las filas pares (even) dentro de .tabla/
+/*Establece el color de fondo de las filas pares como gris claro*/
+
+
+.tabla tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*Aplica las reglas a las filas de la tabla cuando se pasa el ratón por encima (hover).*/
+/*color de fondo de las filas cuando se pasa el ratón por encima como gris*/
+
+
+.tabla tr:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Define una sección para la lista de tareas -->
+    <section class="todoList">
+
+        <!-- Encabezado principal de la página -->
+        <h1>Todo List</h1>
+
+        <!-- Define un artículo que contiene el formulario y la lista de tareas -->
+        <article>
+
+            <!-- Encabezado para la sección del formulario de nueva tarea. -->
+            <div class="tituloh4">
+            <h4>Nueva tarea</h4>
+            </div>
+
+            <!-- Formulario para agregar una nueva tarea, con un campo de entrada de texto y un botón -->
+            <div class="campos">
+            <input type="text" id="agregarTarea">
+            <button type="button" id="boton">Agregar</button>
+            </div>
+
+            <!--Sección para mostrar los resultados de la lista de tareas -->
+            <div class="resultados">
+
+                <!--Muestra el total de tareas y el número de tareas realizadas-->
+                <div class="totales">
+                    <p><strong>Total</strong>: <span id="total"></span></p>
+                    <p><strong>Realizadas</strong>: <span id="realizadas"></span> </p>
+                </div>
+
+            <!-- table -->
+                
+                <!--Tabla para mostrar la lista de tareas-->
+                <table id="listaDeTareas" class="tabla">
+
+                    <!--Encabezado y cuerpo de la tabla respectivamente-->
+                    <thead>
+                        <tr>
+                            <td class="titulos">ID </td>
+                            <td class="titulos">Tarea </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Tarea 1</td>
+                            <td><input type="checkbox"></td>
+                            <td><span></span></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+
+    <script src="./assets/js/list.js"></script>
+</body>
+</html>
